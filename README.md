@@ -2,9 +2,9 @@
 
 [![ClawHub](https://img.shields.io/badge/ClawHub-sf--civic--digest-blue)](https://clawhub.ai/sgillen/sf-civic-digest)
 
-CivicClaw is a set of scripts and prompts that collect and synthesize San Francisco government data and journalism sources. It allows your agent to answer questions about what's happening in your neighborhood, tell you what hearings or events are coming up that you could attend, and show you where decisions that affect you are being made.
+CivicClaw is a set of scripts and prompts that collect and synthesize San Francisco government data and journalism sources. It allows your agent to answer questions about what's happening in your neighborhood, tell you what hearings or events are coming up that you could attend, and show you where decisions that affect you are being made. You tell it what you care about, and the agent filters and surfaces relavent information to you.
 
-I use it to give me a weekly digest of what happened in my neighborhood and if there are any public hearings or trash pickups I might want to attend. The nature of skills means you can mold it to be whatever you want, do research on your elected officials, track specific projects, the sky is the limit. All 11 SF supervisorial districts supported.
+I use it to give me a weekly digest of what happened in my neighborhood and if there are any public hearings or trash pickups I might want to attend. I've also been using it just to learn more about how government functions. But you can mold it to be whatever you want, do research on your elected officials, track specific projects, the sky is the limit. All 11 SF supervisorial districts supported.
 
 ## Why I Built This
 
@@ -20,7 +20,7 @@ Point your agent at `SKILL.md`. It'll take it from there.
 
 **Data layers:** Building permits, housing pipeline (AB 2011/SB 35/density bonus), 311 service requests, Ethics Commission (lobbyist contacts + campaign contributions), eviction notices
 
-**Journalism:** Mission Local, Streetsblog SF, SForF YIMBY, 48 Hills, SF Standard
+**Journalism:** Mission Local, Streetsblog SF, SF YIMBY, 48 Hills, SF Standard
 
 **Community:** Volunteer cleanup events (Refuse Refuse SF + DPW)
 
