@@ -1,0 +1,16 @@
+# Runtime state files (auto-generated when scripts run)
+*_archive.json
+*_state.json
+
+# Python cache
+__pycache__/
+
+# Generated reports (user-specific output)
+reports/
+
+# Personal config / watchlists
+sf_hpc_watchlist.json
+civic_config.json
+
+# Personal user profiles (created during onboarding)
+users/
