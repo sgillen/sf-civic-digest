@@ -58,3 +58,17 @@ This file tells the agent who it's writing for. It shapes editorial tone, what g
 **Actions:** <!-- e.g., "Every time-sensitive item goes in Potential Actions with what, why, and what to do" -->
 
 **Tone:** <!-- e.g., "Neutral language, editorial judgment" or "Opinionated, tell me what you think" -->
+
+---
+
+## Framing Preferences
+
+<!-- Optional. These override the default STYLE.md framing and tell the agent
+     how you think about specific topics. Examples:
+
+     **Housing:** "Why isn't this built yet" — not "should this get built."
+     **Transit:** Pedestrian/cyclist lens. Parking matters for how streets work, not for drivers.
+     **Lobbying:** Note the volume, explain the business logic, don't assume adversarial intent.
+     **Out-of-district:** Skip unless it sets a precedent for my corridors.
+     **Board of Supervisors:** Patterns and contradictions, not just what passed.
+-->

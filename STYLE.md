@@ -39,18 +39,16 @@ Reference: generate a sample digest to see these rules in practice.
 10. **Locate geographically.** "Jones Street corridor" not "District 5."
 11. **Connect threads across sources.** Lobbying + permits + 311 + journalism = one story, not four sections.
 12. **Neutral language, editorial judgment.** Curate aggressively — decide what matters, connect the dots, explain why the reader should care. But write in neutral language, and stop when you've stated the fact and its consequence. Don't editorialize beyond that. "40+ landmark designations this quarter — each one adds preservation constraints that make demolition or major alteration harder" is the right stopping point. Don't add "whether that's clearing a backlog or systematically constraining the corridor..." — the reader can see the implication. And don't write punchy headlines that have already decided the answer: "the corridor keeps getting harder to build one vote at a time" has already picked a villain. State the fact, state the consequence, stop.
-13. **Don't frame lobbying as adversarial.** Note the volume, explain the business logic, ask whether the policy makes sense.
-14. **Housing lens: "why isn't this built yet."** Not "should this be built" or "developers seek approvals."
-15. **Transit lens: pedestrian/cyclist.** Parking matters for how streets work, not for drivers' convenience.
-16. **Cut empty sections.** If there's no signal, don't include a "nothing to report" placeholder.
-17. **Cut minor permits.** Reroofing, windows, decks → one summary line at most. If nothing notable was filed, don't write a "Nothing Happening" section — the TLDR already said it.
-18. **No infrastructure excuses in the narrative.** "RSS only covers 5 days" goes in a footnote or nowhere.
-19. **The user can ask for details.** The report doesn't need to be exhaustive. It needs to be interesting. If someone wants the full permit list or 311 breakdown, they'll ask. Don't preemptively dump it.
-20. **The test:** Would this person text a friend about this? If not, cut it or rewrite it.
-21. **No-content meetings get cut entirely.** If a meeting has no agenda posted and nothing to say about it, omit it. Don't write "BART Board meets Apr 9, agenda TBD" — that's noise. The only exception: a meeting is imminent (within 48 hours) and the reader should know to check.
-22. **Every time-sensitive item belongs in Potential Actions.** Town halls, hearings, comment periods, cleanups — all of it. Don't bury actionable items in body sections. If there's a date and a place, it's an action. Give it the full treatment: what it is, why you'd care, what to do.
-23. **Out-of-district items: skip unless directly D5-relevant.** A SFCTA town hall in the southwest corner of SF doesn't belong in a D5 report unless it sets a precedent that affects Divisadero or similar corridors. When in doubt, cut it.
-24. **Developer mode (USER.md flag).** If the reader's USER.md includes a developer mode section, append a `🔧 Dev Notes` section at the end with: meetings found but not actionable, items that hit a filter but were too thin to include, and any sources that errored or returned empty. Default users (no developer flag) never see this section.
+13. **Framing comes from USER.md.** Housing lens, transit lens, lobbying stance, out-of-district filtering — all defined per-user in their profile. If USER.md has framing preferences, follow them. If not, default to neutral.
+14. **Cut empty sections.** If there's no signal, don't include a "nothing to report" placeholder.
+15. **Cut minor permits.** Reroofing, windows, decks → one summary line at most. If nothing notable was filed, don't write a "Nothing Happening" section — the TLDR already said it.
+16. **No infrastructure excuses in the narrative.** "RSS only covers 5 days" goes in a footnote or nowhere.
+17. **The user can ask for details.** The report doesn't need to be exhaustive. It needs to be interesting. If someone wants the full permit list or 311 breakdown, they'll ask. Don't preemptively dump it.
+18. **The test:** Would this person text a friend about this? If not, cut it or rewrite it.
+19. **No-content meetings get cut entirely.** If a meeting has no agenda posted and nothing to say about it, omit it. Don't write "BART Board meets Apr 9, agenda TBD" — that's noise. The only exception: a meeting is imminent (within 48 hours) and the reader should know to check.
+20. **Every time-sensitive item belongs in Potential Actions.** Town halls, hearings, comment periods, cleanups — all of it. Don't bury actionable items in body sections. If there's a date and a place, it's an action. Give it the full treatment: what it is, why you'd care, what to do.
+21. **Out-of-district items: skip unless directly relevant.** A SFCTA town hall across town doesn't belong in a district report unless it sets a precedent. When in doubt, cut it.
+22. **Developer mode (USER.md flag).** If the reader's USER.md includes a developer mode section, append a `🔧 Dev Notes` section at the end with: meetings found but not actionable, items that hit a filter but were too thin to include, and any sources that errored or returned empty. Default users (no developer flag) never see this section.
 
 ---
 
@@ -64,69 +62,26 @@ Reference: generate a sample digest to see these rules in practice.
 
 ---
 
-### Lobbying & Tech
+### Voice — More Examples
 
-The user works in tech. Don't default to "corporations buying influence." Lobbying is how industries engage with government — it's notable when the volume is unusual, not inherently sinister.
+**Lobbying — be specific, not suspicious:**
+> Company X is the supervisor's most active lobbyist — 8 contacts in 2 months, all on the same topic. The volume is notable, and the coordination suggests a strategy.
 
-**Good:**
-> Waymo is Mahmood's most active lobbyist — 8 contacts in 2 months, all framed around the December power outages. Damage control plus positioning on the Mandelman AV resolution. Makes sense: they need supervisors to see them as cooperative partners, not as the company whose cars blocked emergency vehicles.
-
-This is interesting because: the volume is notable, the framing is coordinated, and we can see the business logic. It treats the reader as someone who understands how companies operate.
-
-**Bad:**
-> That framing is a tell. A one-time debrief doesn't require 8 meetings across two months. Classic lobbying: work the target from both sides.
-
-This reads like an investigative journalist trying to catch someone. It assumes the reader shares a suspicion of corporate engagement. The user doesn't.
-
-**Also bad:**
-> Waymo contacted Mahmood 8 times. No concerns here.
-
-Don't go the other direction and be uncritical. The volume IS notable. The coordination IS worth flagging. Just don't frame it as adversarial.
-
-**The right questions to raise:**
-- What's Mahmood's actual position on this?
-- Does the policy being lobbied for make sense for the city?
-- Is this engagement producing good outcomes?
+Not: "Classic lobbying: work the target from both sides." Don't assume adversarial intent — note the pattern, explain the business logic, let the reader judge.
 
 ---
 
-## Framing: Housing
-
-The user is pro-building. The question is always "why isn't this getting built faster" — not "should this get built."
-
-**Good:**
+**Housing — tell a story, not a zoning report:**
 > Three cancellations: 39 Taylor (112 units), 819 Ellis (120), 841 Polk (22). The pipeline is losing more units to cancellation than it's adding through new filings.
 
-**Bad:**
-> Developers continue to seek approvals for large residential projects in the district.
-
-The second one sounds like a zoning report. The first one tells a story about a system that isn't working.
+Not: "Developers continue to seek approvals for large residential projects in the district."
 
 ---
 
-## Framing: Transit & Streets
+**Board of Supervisors — patterns, not minutes:**
+> 33 landmark designations in one Board meeting. At this pace, preservation is outpacing new construction.
 
-The user is car-free. Parking policy matters when it changes how streets work for pedestrians and cyclists. Don't assume the reader cares about drivers' convenience.
-
-**Good:**
-> Items 11a-d convert Broderick/Oak from RPP to metered parking — the 400 Divisadero block. Comment at sfmta.com/EngHearing.
-
-**Bad:**
-> The proposed metering changes would affect parking availability for residents of the Broderick Street corridor.
-
-The first one connects the street change to the housing project and tells you what to do. The second one is written for car owners.
-
----
-
-## Framing: Board of Supervisors
-
-Don't just list what passed. Look for patterns, contradictions, and dollar amounts buried in routine items.
-
-**Good:**
-> 33 landmark designations in one Board meeting. 99 Divisadero is on the list. At this pace, preservation constrains the housing corridor.
-
-**Bad:**
-> The Board of Supervisors passed several landmark designation resolutions at its March 24 meeting, including properties in multiple districts.
+Not: "The Board of Supervisors passed several landmark designation resolutions at its March 24 meeting, including properties in multiple districts."
 
 The first one has a point of view. The second one is a press release.
 

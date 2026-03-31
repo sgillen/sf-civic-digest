@@ -12,15 +12,17 @@ description: Track San Francisco city government activity — Board of Superviso
 ## Quick Start
 
 ```bash
-# Step 1: Find the skill root (wherever this SKILL.md lives)
-SKILL_DIR="$(dirname "$(realpath "$0")")"   # if running a shell script
-# or just note the directory containing this SKILL.md file
+# Step 1: Find the absolute path to this skill's scripts/ directory
+#         (it's always a sibling of this SKILL.md file)
+SKILL_DIR="/absolute/path/to/sf-civic-digest"
 
 # Step 2: Run scripts using that absolute path (--district N required)
 python3 "$SKILL_DIR/scripts/sf_weekly_digest.py" --district 5 --json
 
 # Step 3: Synthesize the JSON output into a narrative report (see STYLE.md)
 ```
+
+**Note:** `sf_weekly_digest.py` makes ~22 network calls sequentially and can take 2-3 minutes. For a quick test, try a single script first: `python3 "$SKILL_DIR/scripts/sf_journalism.py" --district 5 --days 7 --json`
 
 **District:** Pass `--district N` (1–11) to any script. User preferences and neighborhood context live in `USER.md` — read it before writing a report. There is no `civic_config.json` or `civic_config.example.json`; those files have been removed.
 
@@ -29,7 +31,7 @@ python3 "$SKILL_DIR/scripts/sf_weekly_digest.py" --district 5 --json
 - Find it: `scripts/` is always a sibling of this SKILL.md file
 - Example: if SKILL.md is at `/home/alice/.openclaw/workspace/skills/sf-civic-digest/SKILL.md`, then scripts are at `/home/alice/.openclaw/workspace/skills/sf-civic-digest/scripts/`
 - **Never use bare relative paths like `scripts/foo.py`** — they break when the working directory is anything other than the skill root
-- When in doubt: `realpath skills/sf-civic-digest/scripts/sf_civic_digest.py` gives you the absolute path
+- When in doubt: `realpath` on any script path gives you the absolute path
 
 ---
 
@@ -105,10 +107,10 @@ Build timeline benchmarks: `references/sf-build-timelines.md` — **Read before 
 ### Agent-driven (recommended for one-off reports)
 
 ```bash
-# 1. Collect data
-python3 scripts/sf_weekly_digest.py --json > /tmp/civic_data.json
-python3 scripts/sf_housing_pipeline.py --district 5 --json >> /tmp/civic_data.json
-python3 scripts/sf_volunteer_cleanups.py --district 5 --days 14 --json >> /tmp/civic_data.json
+# 1. Collect data (use absolute paths — see path rule above)
+python3 /absolute/path/to/sf-civic-digest/scripts/sf_weekly_digest.py --json > /tmp/civic_data.json
+python3 /absolute/path/to/sf-civic-digest/scripts/sf_housing_pipeline.py --district 5 --json >> /tmp/civic_data.json
+python3 /absolute/path/to/sf-civic-digest/scripts/sf_volunteer_cleanups.py --district 5 --days 14 --json >> /tmp/civic_data.json
 
 # 2. Agent synthesizes following STYLE.md
 # Read STYLE.md, read the JSON, write narrative to reports/
