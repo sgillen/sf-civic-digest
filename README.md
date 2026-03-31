@@ -10,13 +10,9 @@ I use it to give me a weekly digest of what happened in my neighborhood and if t
 
 I was frustrated not knowing where decisions that affect me were being made, or how my city government actually works. Why has 400 Divisadero been an abandoned car wash for years? Who decides what art to put in Golden Gate Park? I didn't know, but I wanted to — and I wanted to move the needle on issues I care about. I wanted to show up and advocate for more housing.
 
----
-
 ## Getting Started
 
 Point your agent at `SKILL.md`. It'll take it from there.
-
----
 
 ## What It Covers
 
@@ -34,4 +30,5 @@ Point your agent at `SKILL.md`. It'll take it from there.
 
 - **Legistar historical data**: RSS feed covers ~3 weeks. Older Board of Supervisors vote history requires manual archive building.
 - **SF Examiner**: RSS feed returns 404 — not currently monitored.
+- **Journalism Sources**: Picked according to my own taste and bias. Feel free to adjust.
 - **MOHCD affordable housing pipeline**: Not yet integrated.
